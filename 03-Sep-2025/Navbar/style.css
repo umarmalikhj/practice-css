@@ -7,10 +7,16 @@
 .navbar{
     width: 100vw;
     height: 8vh;
-    background-color: darkred ;
+    background-color: black ;
     position: sticky;
     top: 0;
     box-shadow: 0px 5px 15px 2px rgba(0,0,0,0.57);
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img{
+    height: 100%;
 }
 
 .navitems{
@@ -32,4 +38,20 @@
 .navitems li a:hover{
     background-color: rgb(196, 56, 56);
     cursor: pointer;
+}
+
+#home{
+    height: 80vh;
+}
+
+#about{
+    height: 80vh;
+}
+
+#products{
+    height: 80vh;
+}
+
+#contact{
+    height: 80vh;
 }
