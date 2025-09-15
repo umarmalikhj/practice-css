@@ -199,7 +199,23 @@ html{
 
 #works{
     height: calc(100vh - 8vh);
+    background-color: rgb(74, 74, 74);
+}
 
+.workshead{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    padding: 2rem 2.5rem;
+}
+
+.workshead h1{
+    font-family: var(--head-font);
+    padding-bottom: 0.5rem;
+}
+
+.workshead p{
+    font-family: var(--primary-font);
 }
 
 .workscontent{
@@ -207,16 +223,22 @@ html{
     justify-content: space-around;
 }
 
-.workcard{
+.workcard {
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: space-around;
-    background-color: aqua;
-    height: 325px;
+    height: 365px;
     width: 325px;
     padding: 1rem;
-    border-radius: 26px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 
+        0 8px 32px rgba(0, 0, 0, 0.2),
+        inset 0 1px 0 rgba(255, 255, 255, 0.3),
+        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
 }
 
 .cardimg{
@@ -246,6 +268,12 @@ html{
     display: flex;
     margin-top: 0.5em;
     justify-content: flex-end;
+}
+
+#viewcont{
+    height: 3em;
+    width: 6em;
+    border-radius: 10px;
 }
 
 #collaborate{
