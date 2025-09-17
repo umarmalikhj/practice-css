@@ -16,7 +16,9 @@ html{
     scroll-behavior: smooth;
     padding-top: 8vh;
     scroll-padding-top: 8vh;
+    background: linear-gradient(135deg, #0d0d0d, #1a1a1a, #0d0d0d);
 }
+
 
 .navbar{
     width: 100%;
@@ -157,10 +159,11 @@ html{
 }
 
 #about{
-    height: calc(100vh - 8vh);
+    height: calc(110vh - 8vh);
     display: flex;
     justify-content: space-between;
     width: 100%;
+    color: var(--secondary-color);
 }
 
 .about1{
@@ -199,7 +202,6 @@ html{
 
 #works{
     height: calc(100vh - 8vh);
-    background-color: rgb(74, 74, 74);
 }
 
 .workshead{
