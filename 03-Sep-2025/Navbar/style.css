@@ -236,26 +236,32 @@ html{
     width: 50%;
 }
 
-#works{
-    height: calc(100vh - 8vh);
-}
-
 .workshead{
     display: flex;
     flex-direction: column;
     padding: 2rem 2.5rem;
 }
 
-.workshead h1 ,
-.workshead h3{
+.workshead h1 {
     font-family: var(--head-font);
+    font-size: 2rem;
+    color: var(--primary-color);
     padding-bottom: 0.5rem;
-    color: var(--secondary-color);
 }
 
-.workshead p{
-    font-family: var(--primary-font);
+.workshead h3 {
+    font-family: var(--head-font);
+    font-weight: 500;
     color: var(--secondary-color);
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.workshead p {
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    max-width: 700px;
+    opacity: 0.85;
 }
 
 .workscontent{
