@@ -17,6 +17,7 @@ html{
     padding-top: 8vh;
     scroll-padding-top: 8vh;
     background: linear-gradient(135deg, #0d0d0d, #202020, #0d0d0d);
+    padding: 8vh 1rem 0 1rem;
 }
 
 
@@ -203,6 +204,7 @@ html{
 .about2 > h3{
     font-family: var(--head-font);
     padding-bottom: 0.5em;
+    color: var(--primary-color);
 }
 
 .workbtn{
@@ -212,7 +214,7 @@ html{
     font-family: var(--primary-font);
     border: none;
     border-radius: 0.75em;
-    background: rgba(255,255,255,0.08);
+    background: rgba(184, 36, 42, 0.2);
     backdrop-filter: blur(8px);
     color: var(--secondary-color);
     cursor: pointer;
@@ -220,7 +222,8 @@ html{
 }
 
 .workbtn:hover {
-    background: rgba(255,255,255,0.15);
+    background: var(--primary-color);
+    box-shadow: 0 4px 14px rgba(184, 36, 42, 0.6);
     transform: translateY(-2px);
 }
 
@@ -240,40 +243,47 @@ html{
 .workshead{
     display: flex;
     flex-direction: column;
-    /* align-items: center; */
     padding: 2rem 2.5rem;
 }
 
-.workshead h1{
+.workshead h1 ,
+.workshead h3{
     font-family: var(--head-font);
     padding-bottom: 0.5rem;
+    color: var(--secondary-color);
 }
 
 .workshead p{
     font-family: var(--primary-font);
+    color: var(--secondary-color);
 }
 
 .workscontent{
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .workcard {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    height: 365px;
-    width: 325px;
+    justify-content: space-between;
+    height: 315px;
+    width: 300px;
     padding: 1rem;
-    border-radius: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
-    -webkit-backdrop-filter: blur(20px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
-    box-shadow: 
-        0 8px 32px rgba(0, 0, 0, 0.2),
-        inset 0 1px 0 rgba(255, 255, 255, 0.3),
-        inset 0 -1px 0 rgba(255, 255, 255, 0.1);
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border 0.3s ease;
+}
+
+.workcard:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
 }
 
 .cardimg{
@@ -283,7 +293,6 @@ html{
 }
 
 .cardimg img{
-    place-items: center;
     width: 100%;
     border-radius: 10px;
 }
@@ -292,17 +301,38 @@ html{
     font-family: var(--head-font);
     font-size: 1rem;
     padding: 0.8rem 0 0.4rem 0;
+    color: var(--secondary-color);
 }
 
 .cardcont p{
     font-family: var(--primary-font);
     font-size: 0.8rem;
+    color: var(--secondary-color);
 }
 
 .cardcta{
     display: flex;
     margin-top: 0.5em;
     justify-content: flex-end;
+}
+
+.cardcta button {
+    padding: 0.5rem 1.25rem;
+    border: none;
+    border-radius: 0.75rem;
+    background: rgba(184, 36, 42, 0.2);
+    backdrop-filter: blur(6px);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.cardcta button:hover {
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(184, 36, 42, 0.6);
 }
 
 #viewcont{
