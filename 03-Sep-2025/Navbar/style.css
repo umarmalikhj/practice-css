@@ -172,7 +172,7 @@ html{
 }
 
 .about1, .about2 {
-    height: 90%;
+    height: 70%;
     flex: 1;
     padding: 2em;
     border-radius: 1.5em;
@@ -199,12 +199,18 @@ html{
 }
 
 .about1 > h1 ,
-.about1 > h3 ,
-.about2 > h1,
-.about2 > h3{
+.about2 > h1{
     font-family: var(--head-font);
     padding-bottom: 0.5em;
     color: var(--primary-color);
+}
+
+
+.about1 > h3 ,
+.about2 > h3{
+    font-family: var(--head-font);
+    padding-bottom: 0.5em;
+    color: var(--secondary-color);
 }
 
 .workbtn{
@@ -260,7 +266,6 @@ html{
 .workshead p {
     color: var(--secondary-color);
     font-family: var(--primary-font);
-    max-width: 700px;
     opacity: 0.85;
 }
 
@@ -348,13 +353,13 @@ html{
 }
 
 #collaborate{
-    height: calc(80vh - 8vh);
+    height: calc(60vh - 8vh);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 2rem;
-    padding: 0 4rem;
+    padding: 4rem 4rem 0 4rem;
 }
 
 .col-head{
@@ -367,17 +372,21 @@ html{
 
 .col-head h1{
     font-family: var(--head-font);
-    margin-bottom: 0.5rem;
-}
-
-.col-head h5{
-    font-family: var(--head-font);
-    text-transform: capitalize;
+    font-size: 3em;
+    font-weight: 600;
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
-.col-head p{
+.col-head h5{
     font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 1rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+    width: 75%;
+    line-height: 1.75rem;
+    font-weight: 300;
 }
 
 .col-cta{
@@ -387,14 +396,28 @@ html{
     gap: 1rem;
 }
 
-.col-cta button{
+.col-btn{
     width: 7rem;
     padding: 0.75em;
+    border: none;
+    border-radius: 0.75rem;
+    background: rgba(184, 36, 42, 0.2);
+    backdrop-filter: blur(6px);
+    color: var(--secondary-color);
+    font-family: var(--primary-font);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.col-btn:hover{
+    background: var(--primary-color);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 14px rgba(184, 36, 42, 0.6);
 }
 
 .footer{
-    height: 30vh;
-    background-color: grey;
+    height: 20vh;
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
@@ -405,7 +428,7 @@ html{
 
 .footer-social a{
     text-decoration: none;
-    color: black;
+    color: var(--secondary-color);
 }
 
 .footer-social a i{
@@ -414,5 +437,7 @@ html{
 }
 
 .footer-copyright{
+    text-transform: capitalize;
     font-family: var(--primary-font);
+    color: var(--secondary-color);
 }
