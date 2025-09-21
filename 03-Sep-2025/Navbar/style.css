@@ -318,7 +318,14 @@ html{
     bottom: 1.5rem; 
     font-size: 1.5rem;
     color: var(--secondary-color);
+    transition: all 0.2s ease-in-out;
 }
+
+.services-card i:hover{
+    transform: scale(1.25);
+    color: var(--primary-color);
+}
+
 
 .services-card h1{
     font-family: var(--head-font);
@@ -335,7 +342,6 @@ html{
     font-size: 0.8rem;
     line-height: 1.5rem;
 }
-
 
 
 .workshead{
@@ -511,4 +517,8 @@ html{
     text-transform: capitalize;
     font-family: var(--primary-font);
     color: var(--secondary-color);
+}
+
+.footer-copyright p{
+    font-size: 0.75rem;
 }
