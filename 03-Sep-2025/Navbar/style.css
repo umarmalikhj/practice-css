@@ -268,7 +268,7 @@ html{
 }
 
 #services{
-    height: calc(120vh - 8vh);
+    height: calc(175vh - 8vh);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -277,13 +277,15 @@ html{
 
 .services-head h5{
     width: 100%;
+    margin-bottom: 4rem;
 }
 
 .servicescontent{
     display: flex;
-    justify-content: space-around;
+    align-items: center;
+    justify-content:space-evenly;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 4rem 1rem;
     max-width: 95%; 
     margin: 0 auto;
 }
@@ -291,10 +293,11 @@ html{
 .services-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    height: 315px;
-    width: 300px;
-    padding: 1rem;
+    text-align: start;
+    justify-content: flex-start;
+    height: 300px;
+    width: 40%;
+    padding: 1.5rem;
     border-radius: 1.25rem;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(18px);
@@ -308,6 +311,32 @@ html{
     transform: translateY(-4px);
     box-shadow: 0 12px 36px rgba(0, 0, 0, 0.5);
 }
+
+.services-card i{
+    position: absolute;
+    right: 1.5rem;
+    bottom: 1.5rem; 
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+}
+
+.services-card h1{
+    font-family: var(--head-font);
+    color: var(--secondary-color);
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+
+.services-card p{
+    font-weight: 300;
+    width: 90%;
+    font-family: var(--primary-font);
+    color: var(--secondary-color);
+    font-size: 0.8rem;
+    line-height: 1.5rem;
+}
+
+
 
 .workshead{
     display: flex;
