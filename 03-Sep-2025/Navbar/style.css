@@ -183,7 +183,7 @@ html{
 }
 
 .about1, .about2 {
-    height: 70%;
+    height: 40%;
     flex: 1;
     padding: 2em;
     border-radius: 1.5em;
@@ -201,7 +201,7 @@ html{
     box-shadow: 0 12px 40px rgba(0, 0, 0, 0.6);
 }
 
-.about1{
+.about1 , .about2{
     display: flex;
     flex-direction: column;
     padding: 2em;
@@ -242,15 +242,6 @@ html{
     background: var(--primary-color);
     box-shadow: 0 4px 14px rgba(184, 36, 42, 0.6);
     transform: translateY(-2px);
-}
-
-.about2{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding: 2em;
-    font-family: var(--primary-font);
-    width: 50%;
 }
 
 .workshead{
