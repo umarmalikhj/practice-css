@@ -557,6 +557,18 @@ html{
 }
 
 @media (max-width: 480px) {
+    .herohead h1{
+        font-size: 3em;
+    }
+
+    .herohead h4{
+        font-size: 0.9em;
+    }
+
+    .hero-start{
+        font-size: 0.5em;
+    }
+
     #services{
         height: calc(360vh - 8vh);
     }
@@ -595,4 +607,14 @@ html{
         width: 100%;
         height: 200px;
     }
+
+    #collaborate{
+        height: 70vh;
+        padding: 0;
+    }
+
+    .col-head{
+        width: 90%;
+    }
+
 }
