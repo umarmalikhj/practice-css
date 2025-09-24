@@ -385,18 +385,19 @@ html{
 }
 
 #about {
-    height: calc(80vh - 8vh);
+    height: calc(60vh - 8vh);
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2em;
+    margin-top: 5em;
     padding: 2em;
     width: 100%;
     color: var(--secondary-color);
 }
 
 .about1, .about2 {
-    height: 60%;
+    height: 100%;
     flex: 1;
     padding: 2em;
     border-radius: 1.5em;
@@ -570,7 +571,7 @@ html{
     }
 
     #services{
-        height: calc(360vh - 8vh);
+        height: calc(380vh - 8vh);
     }
 
     .servicescontent{
@@ -617,4 +618,11 @@ html{
         width: 90%;
     }
 
+    .com-head{
+        font-size: 2.5em;
+    }
+
+    .com-sub{
+        font-size: 0.75em;
+    }
 }
