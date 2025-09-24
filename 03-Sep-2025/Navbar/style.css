@@ -571,7 +571,7 @@ html{
     }
 
     #services{
-        height: calc(380vh - 8vh);
+        height: calc(370vh - 8vh);
     }
 
     .servicescontent{
@@ -589,6 +589,10 @@ html{
 
     .services-head{
         padding: 2rem 1rem;
+    }
+
+    .services-head h5{
+        margin: 0;
     }
 
     .workshead{
